@@ -2,7 +2,7 @@
   background-image: url('hero-photo-res1.jpeg');
   background-position: 25% 10%;
   background-repeat:  no-repeat;
-  background-attachment: fixed;
+  
   background-size:  cover;
   background-color: #999;
 }
@@ -11,9 +11,6 @@
   background-color:#F0F0F0;
 }
 
-.tgpx-color{
-  color: #ea9111;
-}
 
 .powered-by{
   margin-top:35px;
