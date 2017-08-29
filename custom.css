@@ -20,6 +20,10 @@
   margin-right: 5px;
 }
 
+.main-subtitle{
+  font-weight: 400;
+}
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
