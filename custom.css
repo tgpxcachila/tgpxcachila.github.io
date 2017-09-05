@@ -20,6 +20,21 @@
   margin-right: 5px;
 }
 
+.hr-title{
+  height: 3px;
+  margin: 0.5rem 0;
+  background-color: #ffffff;
+}
+
+.hr-option{
+  height: 1px;
+  margin: 0.5rem 0;
+}
+
+.dan-margin{
+  margin: 1rem 0;
+}
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
