@@ -29,13 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  //prepeare the youtube video thumbs and play on click
   var div, n,
       v = document.getElementsByClassName("youtube-player");
   for (n = 0; n < v.length; n++) {
       div = document.createElement("div");
       div.setAttribute("data-id", v[n].dataset.id);
-      div.innerHTML = labnolThumb(v[n].dataset.id);
-      div.onclick = labnolIframe;
+      div.innerHTML = getThumb(v[n].dataset.id);
+      div.onclick = getIframe;
       v[n].appendChild(div);
   }
 
@@ -43,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function labnolThumb(id) {
+function getThumb(id) {
     var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
 }
 
-function labnolIframe() {
+function getIframe() {
     var iframe = document.createElement("iframe");
     var embed = "https://www.youtube.com/embed/ID?autoplay=1&amp;rel=0&amp;showinfo=0";
     iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
